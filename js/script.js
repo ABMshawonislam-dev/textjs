@@ -63,6 +63,9 @@ abmArr.map(text=>{
                 let marginy = value.split("-")[2];
                 text.style.marginTop = marginx
                 text.style.marginBottom = marginx
+              }else if(mainvalue == "align"){
+                let align = value.split("-")[2];
+                text.style.textAlign = align
               }
           })
       }
