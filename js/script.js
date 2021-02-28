@@ -61,11 +61,45 @@ abmArr.map(text=>{
                 text.style.marginRight = marginx
               }else if(mainvalue == "my"){
                 let marginy = value.split("-")[2];
-                text.style.marginTop = marginx
-                text.style.marginBottom = marginx
+                text.style.marginTop = marginy
+                text.style.marginBottom = marginy
               }else if(mainvalue == "align"){
                 let align = value.split("-")[2];
                 text.style.textAlign = align
+              }else if(mainvalue == "w"){
+                let width = value.split("-")[2];
+                text.style.width = width
+              }else if(mainvalue == "h"){
+                let height = value.split("-")[2];
+                text.style.height = height
+              }else if(mainvalue == "btn"){
+                text.style.padding = "10px"
+                text.style.display = "inline-block"
+              }else if(mainvalue == "b"){
+                let width = value.split("-")[2];
+                let bstyle = value.split("-")[3];
+                let color = value.split("-")[4];
+                text.style.border = `${width} ${bstyle} ${color}`
+              }else if(mainvalue == "bt"){
+                let width = value.split("-")[2];
+                let bstyle = value.split("-")[3];
+                let color = value.split("-")[4];
+                text.style.borderTop = `${width} ${bstyle} ${color}`
+              }else if(mainvalue == "bb"){
+                let width = value.split("-")[2];
+                let bstyle = value.split("-")[3];
+                let color = value.split("-")[4];
+                text.style.borderBottom = `${width} ${bstyle} ${color}`
+              }else if(mainvalue == "bl"){
+                let width = value.split("-")[2];
+                let bstyle = value.split("-")[3];
+                let color = value.split("-")[4];
+                text.style.borderLeft = `${width} ${bstyle} ${color}`
+              }else if(mainvalue == "br"){
+                let width = value.split("-")[2];
+                let bstyle = value.split("-")[3];
+                let color = value.split("-")[4];
+                text.style.borderRight = `${width} ${bstyle} ${color}`
               }
           })
       }
